@@ -1,0 +1,76 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url("https://i.pinimg.com/564x/fe/2e/f3/fe2ef379ac0a7a156ca2f187a76161d6.jpg") no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+h1.heading {
+    color: #f6f618;
+    text-align: center;
+    font-size: 4rem; 
+    margin: 20px 0;
+    font-family: 'Permanent Marker', cursive; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); 
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 20px;
+    gap: 15px; 
+}
+
+.key {
+    flex: 1 0 15%;
+    margin: 10px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.6); 
+    border: 2px solid #fd1f4d;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.1s ease, border-color 0.1s ease, background 0.1s ease; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); 
+}
+
+.key:hover {
+    border-color: #ffc600;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.key kbd {
+    display: block;
+    font-size: 3.5rem; 
+    font-family: 'Permanent Marker', cursive;
+    color: #ffc600;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+}
+
+.sound {
+    font-size: 1.5rem; 
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #ffc600;
+}
+
+.playing {
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 20px #ffc600; 
+}
+
+@media (max-width: 768px) {
+    .key {
+        flex: 1 0 30%;
+    }
+}
+
+@media (max-width: 480px) {
+    .key {
+        flex: 1 0 45%; 
+    }
+}
+
